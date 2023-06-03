@@ -161,4 +161,8 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS   
 7. changed name of resource from tutorial to 'terraform nginx tutorial'
 8. > terraform plan
 Plan: 1 to add, 0 to change, 1 to destroy.
-9. 
+9. > terraform apply
+10. >docker ps
+(base) Yauhens-MacBook-Pro:terraform-tutorial yauhenbichel$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+21dda7f6024d   f9c14fe76d50   "/docker-entrypoint.…"   8 seconds ago   Up 7 seconds   0.0.0.0:8000->80/tcp   terraform-nginx-tutorial
