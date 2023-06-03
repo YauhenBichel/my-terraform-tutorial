@@ -150,3 +150,15 @@ docker_container.nginx: Creating...
 docker_container.nginx: Creation complete after 6s [id=2d27c6a85c437dc948259952aec1cdfb4126f38285e268b492deed27da3f5668]
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+5. Result: localhost:8000
+nginx is running
+
+6. >docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+2d27c6a85c43   f9c14fe76d50   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:8000->80/tcp   tutorial
+
+7. changed name of resource from tutorial to 'terraform nginx tutorial'
+8. > terraform plan
+Plan: 1 to add, 0 to change, 1 to destroy.
+9. 
