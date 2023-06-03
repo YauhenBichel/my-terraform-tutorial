@@ -166,3 +166,16 @@ Plan: 1 to add, 0 to change, 1 to destroy.
 (base) Yauhens-MacBook-Pro:terraform-tutorial yauhenbichel$ docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
 21dda7f6024d   f9c14fe76d50   "/docker-entrypoint.…"   8 seconds ago   Up 7 seconds   0.0.0.0:8000->80/tcp   terraform-nginx-tutorial
+
+11. Stop container
+>terraform destroy
+docker_container.nginx: Destroying... [id=21dda7f6024dd967e77eefc7bdd634496b53d2b72af7a2c16f8df50a97852ca8]
+docker_container.nginx: Destruction complete after 1s
+docker_image.nginx: Destroying... [id=sha256:f9c14fe76d502861ba0939bc3189e642c02e257f06f4c0214b1f8ca329326cdanginx]
+docker_image.nginx: Destruction complete after 0s
+
+Destroy complete! Resources: 2 destroyed.
+
+12. docker ps
+empty
+
